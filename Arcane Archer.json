@@ -1,0 +1,831 @@
+{
+	"class": [
+		{
+			"authors": [
+				"AllenZ"
+			],
+			"version": "1.0h",
+			"url": "https://www.dandwiki.com/wiki/Arcane_Archer_(5e_Class)",
+			"name": "Arcane Archer",
+			"source": "Homebrew",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Invocations Known"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"1st",
+						"2nd",
+						"3rd",
+						"4th",
+						"5th"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium"
+				],
+				"weapons": [
+					"simple melee weapons",
+					"ranged martial weapons"
+				],
+				"tools": [
+					"none"
+				],
+				"skills": {
+					"choose": 2,
+					"from": [
+						"Arcana",
+						"Athletics",
+						"History",
+						"Insight",
+						"Investigation",
+						"Medicine",
+						"Perception",
+						"Survival"
+					]
+				}
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) leather armor and a dagger or (b) hide armor and a dagger",
+					"(a) a longbow and 20 arrows or (b) a heavy crossbow and 20 bolts",
+					"(a) an explorer's pack or (b) a scholar's pack"
+				]
+			},
+			"classFeatures": [
+				[
+					{
+						"name": "Fighting Style",
+						"entries": [
+							"At 1st level, you adopt a particular style of fighting as your specialty. You can't take the same Fighting Style option more than once, even if you later get to choose again. At 11th level, you may choose another.",
+							{
+								"name": "Style",
+								"type": "options",
+								"entries": [
+									"Choose one of the following fighting styles:",
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Archery",
+												"entries": [
+													"You gain a +2 bonus to attack rolls you make with ranged weapons."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Close Quarters Shooter",
+												"entries": [
+													"You are trained in making ranged attacks at close quarters. When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll and your base movement speed increases by 5 feet."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Defense",
+												"entries": [
+													"While you are wearing armor, you gain a +1 bonus to AC."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Piercing Shot",
+												"entries": [
+													"You gain a +1 bonus to damage rolls you make with ranged weapons."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "Conjured Arrows",
+						"entries": [
+							"At 1st level, you learn a minor but useful magical trick. As an bonus action, you can conjure 20 nonmagical arrows or bolts. These appear in your hand or in a container, such as a quiver, on your body. They remain for 10 minutes or until you use this feature again, after which they then vanish. At 7th level, these arrows are considered magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage."
+						]
+					}
+				],
+				[
+					{
+						"name": "Spellcasting",
+						"entries": [
+							"At 2nd level, the arcane archer gains access to several arcane imbuements and spells to further augment their ranged attacks.",
+							{
+								"type": "options",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Preparing Spells",
+										"entries": [
+											"The Arcane Archer table shows how many spell slots you have to cast your spells. To cast one of your arcane archer spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+											"You prepare the list of arcane archer spells that are available for you to cast, choosing from the arcane archer spell list. When you do so, choose a number of arcane archer spells equal to your Intelligence modifier + half your arcane archer level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+											"For example, if you are a 5th-level arcane archer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. Casting the spell doesn't remove it from your list of prepared spells.",
+											"You can change your list of prepared spells when you finish a long rest. Preparing a new list of arcane archer spells requires time spent in studying and meditating: at least 1 minute per spell level for each spell on your list."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Spellcasting Ability",
+										"entries": [
+											"Intelligence is the spellcasting ability for your arcane archer spells.",
+											{
+												"type": "abilityDc",
+												"name": "Spell",
+												"attributes": [
+													"int"
+												]
+											},
+											{
+												"type": "abilityAttackMod",
+												"name": "Spell",
+												"attributes": [
+													"int"
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Spellcasting Focus",
+										"entries": [
+											"You can use a ranged martial weapon as a spellcasting focus for your arcane archer spells."
+										]
+									}
+								]
+							}
+						],
+						"gainSubclassFeature": true
+					},
+					{
+						"name": "Arcane Invocations",
+						"entries": [
+							"In your study of the arcane, you have unearthed arcane invocations, allowing you to augment your weapon attacks with various effects.",
+							"At 2nd level, you gain two Arcane Invocations of your choice. Your invocation options are detailed in the Arcane Invocation List as part of your Class Spells. When you gain certain arcane archer levels, you gain additional invocations of your choice, as shown in the Arcane Invocations column of the arcane archer table.",
+							"You can change what Arcane Invocations you know by spending a total of 24 hours studying for every 1 Invocation you change. You must complete the 24 hours of studying within one week of when you started. If you spend more than 8 hours in one day studying, you must roll a d20 at the end. The DC is equal to the amount of hours spent studying. If you fail the DC check you lose all progress for that day. No modifiers can be added to the roll."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Magic Marksman",
+						"entries": [
+							"At 3rd level, you may pick an subclass from Magic Bowman or Precision Sniper. You gain a feature at 3rd level from taking this subclass and gain additional features at 6th, 10th, and 14th levels."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Ability Score Increase",
+						"entries": [
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+						]
+					}
+				],
+				[
+					{
+						"name": "Extra Attack",
+						"entries": [
+							"Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+						]
+					}
+				],
+				[
+					{
+						"name": "Magic Marksman",
+						"entries": [
+							"At 6th level, you may pick an additional feature from your chosen subclass."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Status Resistance",
+						"entries": [
+							"By 7th level, your use of imbuements and arcane magic has imbued your mind and body with protective magic. You have advantage on saving throws against being blinded, frightened, and petrified."
+						]
+					}
+				],
+				[
+					{
+						"name": "Ability Score Increase",
+						"entries": [
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+						]
+					}
+				],
+				[],
+				[
+					{
+						"name": "Magic Marksman",
+						"entries": [
+							"At 10th level, you may pick an additional feature from your chosen subclass."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Additional Fighting Style",
+						"entries": [
+							"At 11th level, you may pick an additional fighting style as an additional speciality.  This fighting style must be different from the fighting style you picked at the 1st level."
+						]
+					}
+				],
+				[
+					{
+						"name": "Ability Score Increase",
+						"entries": [
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+						]
+					}
+				],
+				[],
+				[
+					{
+						"name": "Magic Marksman",
+						"entries": [
+							"At 14th level, you may pick an additional feature from your chosen subclass."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Foresight",
+						"entries": [
+							"Through divination magic you occasionally catch a glimpse of the immediate future. Starting at 15th level, whenever you you must make a saving throw, you gain a bonus to the saving throw equal to half your proficiency bonus rounded down. You must be conscious to grant this bonus."
+						]
+					}
+				],
+				[
+					{
+						"name": "Ability Score Increase",
+						"entries": [
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+						]
+					}
+				],
+				[],
+				[
+					{
+						"name": "Elemental Fury",
+						"entries": [
+							"At 18th level, you gain the ability to enchant a ranged weapon attack with the force of the elements. You may spend 1 charge to make a ranged weapon attack deal elemental energy. This attack deals an additional 2d8 cold, fire, or lightning damage if the attack hits. This features has 4 charges. You regain one expended charge after you finish a short rest and you regain all expended charges after you finish a long rest."
+						]
+					}
+				],
+				[
+					{
+						"name": "Ability Score Increase",
+						"entries": [
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+						]
+					}
+				],
+				[
+					{
+						"name": "Singular Focus",
+						"entries": [
+							"By 20th level, you can readily focus down a single target with the help of others. As an action, you can single out the target of Singular Focus within 120 feet of you. Until the start of your next turn, that target has disadvantage on all saving throws, and all allied creatures within 120 feet of you have advantage on attacks against the target of Singular Focus. You regain the use of this feature after you finish a long rest."
+						]
+					}
+				]
+			],
+			"subclassTitle": "Magic Marksman",
+			"subclasses": [
+				{
+					"name": "Class Spells",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Spells Known",
+								"entries": [
+									"The following are your known magic spells:",
+									{
+										"type": "options",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Cantrips:",
+												"entries": [
+													"{@spell dancing lights}, {@spell light}, {@spell mage hand}, {@spell minor illusion}, {@spell message}, {@spell prestidigitation}, {@spell mending}"
+												]
+											}
+										]
+									},
+									{
+										"type": "options",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "1st Level:",
+												"entries": [
+													"{@spell absorb elements|xge}, {@spell alarm}, {@spell detect magic}, {@spell hunter's mark}, {@spell identify}, {@spell entangle}, {@spell expeditious retreat}, {@spell faerie fire}, {@spell fog cloud}, {@spell grease}, {@spell zephyr strike|xge}"
+												]
+											}
+										]
+									},
+									{
+										"type": "options",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "2nd Level:",
+												"entries": [
+													"{@spell melf's acid arrow}, {@spell arcane lock}, {@spell blindness/deafness}, {@spell darkness}, {@spell gust of wind}, {@spell invisibility}, {@spell misty step}, {@spell pass without trace}, {@spell silence}, {@spell suggestion}, {@spell web}"
+												]
+											}
+										]
+									},
+									{
+										"type": "options",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "3rd Level:",
+												"entries": [
+													"{@spell counterspell}, {@spell dispel magic}, {@spell flame arrows|xge}, {@spell hypnotic pattern}, {@spell major image}, {@spell lightning arrow}, {@spell sending}, {@spell thunder step|xge}, {@spell wind wall}"
+												]
+											}
+										]
+									},
+									{
+										"type": "options",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "4th Level:",
+												"entries": [
+													"{@spell arcane eye}, {@spell confusion}, {@spell compulsion}, {@spell dimension door}, {@spell fire shield}, {@spell freedom of movement}, {@spell locate creature}, {@spell otiluke's resilient sphere}"
+												]
+											}
+										]
+									},
+									{
+										"type": "options",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "5th Level:",
+												"entries": [
+													"{@spell animate objects}, {@spell conjure volley}, {@spell hold monster}, {@spell geas}, {@spell modify memory}, {@spell passwall}, {@spell scrying}, {@spell seeming}, {@spell wall of force}"
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"name": "Arcane Invocation List",
+								"entries": [
+									"The following represent all your options from the Arcane Invocation List:",
+									{
+										"type": "options",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Using as a Cantrip:",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Arrow Return",
+														"entries": [
+															"As a bonus action, you may return a magical arrow you fired to your hand."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Defensive Shot",
+														"entries": [
+															"Concentration, up to 1 minute",
+															"As a bonus action, you may use abjuration magic to weave a charm that disrupts your enemy's magic. If your next ranged attack roll hits, the target suffers disadvantage on the next attack roll it makes before the start of your next turn."
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"type": "options",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Using a 1st level spell slot or higher:",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Bolt",
+														"entries": [
+															"As a reaction, you may shock a creature that has hit you with a melee attack. This creature may make a Constitution saving throw versus your spell save DC to take half of the 2d8 lightning damage and not lose their reaction. When you cast this invocation using a spell slot of 2th level or higher, the damage increases by 1d8 for each slot level above 1st."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Searing Shot",
+														"entries": [
+															"Concentration, up to 1 minute",
+															"As a bonus action, you may enchant your ranged weapon attacks. On your next ranged weapon that hits, the ammo flares with white-hot intensitity, and the attack deals an additional 1d8 fire damage to the target and causes the target to ignite in flames. At the start of each of the target's turns or until the spell ends, the target must make a Constitution saving throw versus your spell save DC. On a failed save, it takes 1d8 fire damage. On a successful save, the spells ends. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends. When you cast this invocation using a spell slot of 2th level or higher, both instances of damage increase by 1d8 for each slot level above 1st."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Thicket Shot",
+														"entries": [
+															"Concentration, up to 1 minute",
+															"As a bonus action, you charge an arrow with poisonous nature energy that wraps around the target. On hit, the target must make a Constitution saving throw equal to your spell save DC to take half of the 3d6 poison damage, and not have its speed is reduced by 10 feet for 1 minute. If the target or a creature within 5 feet of it, uses an action to remove the brambles with a successful Strength (Athletics) check against your spell save DC, the creature's base move speed is not reduced by 10 feet anymore. When you cast this invocation using a spell slot of 2nd level or higher, the damage increases by 2d6 for each slot level above 1st, and the speed reduction increase by 5 feet for each slot level above 1st."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Windy Rebuke",
+														"entries": [
+															"As a reaction, you may attempt to push any Large or smaller creature that moves within 5 feet of you. This creature may make a Strength saving throw versus your spell save DC to take half of the 3d4 slashing damage and not be pushed away 10 feet away from you. When you cast this invocation using a spell slot of 2th level or higher, the damage increases by 2d4 for each slot level above 1st, and the push distance increases by 5 feet for each slot level above 1st."
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"type": "options",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Using a 2nd level spell slot or higher:",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Brute Bane Arrow",
+														"entries": [
+															"Concentration, up to 1 minute",
+															"As an bonus action, you charge an arrow with necromantic magic. On hit, the target must make a Constitution saving throw equal to your spell save DC to take half of the additional 3d10 necrotic damage and to not gain disadvantage on Constitution saving throws until the start of your next turn. When you cast this invocation using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Bursting Shot",
+														"entries": [
+															"Concentration, up to 1 minute",
+															"As a bonus action, you imbue your arrow with a blast of force energy drawn from the school of evocation. If you hit a creature with this arrow, each creature within 10 feet of it takes 2d8 force damage. When you cast this invocation using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Quick Shot",
+														"entries": [
+															"You unleash a surge of energy within you, allowing you to temporarily act faster. If you took the Attack action on your turn, you may move 10 feet and make a ranged weapon attack against a creature within 30 feet of you as a bonus action."
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"type": "options",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Using a 3rd level spell slot or higher:",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Piercing Shot",
+														"entries": [
+															"As an action, you may fire an ethereal arrow that passes through foes and obstacles. This arrow fires forward in a line that is 5 foot wide and 60 feet long. Each creature in the line must make a Dexterity saving throw versus your spell save DC. On a failed save, the target takes 5d10 piercing damage. On a successful save, a target only takes half as much damage. When you cast this invocation using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[],
+						[],
+						[],
+						[]
+					],
+					"source": "Homebrew",
+					"shortName": "Class Spells"
+				},
+				{
+					"name": "Magic Bowman",
+					"subclassFeatures": [
+						[],
+						[],
+						[
+							{
+								"type": "entries",
+								"name": "Magic Bow",
+								"entries": [
+									"By 3rd level, your magic has started to seep into the bows you wield, making them fire projectiles faster. You may add half your Intelligence modifier(rounded up) in additional damage to your damage rolls from ranged martial weapons."
+								]
+							}
+						],
+						[
+							{
+								"type": "entries",
+								"name": "Well Read",
+								"entries": [
+									"By 6th level, you have developed a knack for knowing the age-old stories of magicians and searching for clues related to them. You gain advantage on History and Investigation skill checks related to magic."
+								]
+							}
+						],
+						[
+							{
+								"type": "entries",
+								"name": "Enchanted Projectiles",
+								"entries": [
+									"By 10th level, your attack rolls with ranged weapons ignore any bonuses provided to AC through magic. Your attacks with ranged weapons also deal additional damage equal to your Intelligence modifier if the creature you hit has temporary hit points."
+								]
+							}
+						],
+						[
+							{
+								"type": "entries",
+								"name": "Magical Reserves",
+								"entries": [
+									"By 14th level, you have learned to harness and have gained additional magical capabilities. You gain 3 charges to cast Arcane Invocations. You may spend 1 charge to cast an Arcane Invocation at 1st level, or you may spend more point to cast an Arcane Invocation at a spell slot level equal to the amount of points spent. You regain all uses of this feature after you finish a long rest."
+								]
+							}
+						]
+					],
+					"source": "Homebrew",
+					"shortName": "Magic Bowman"
+				},
+				{
+					"name": "Precision Sniper",
+					"subclassFeatures": [
+						[],
+						[],
+						[
+							{
+								"type": "entries",
+								"name": "Targeting",
+								"entries": [
+									"By 3rd level, you have learned how to calm yourself and ready your attacks. You may spend an action focusing on a target within sight. On your next turn, you have advantage on ranged attack rolls against the target and your ranged weapon deals an additional die worth of damage against them."
+								]
+							}
+						],
+						[
+							{
+								"type": "entries",
+								"name": "Tracker",
+								"entries": [
+									"By 6th level, you have gained sufficient experience in tracking to pursue any quarry. You gain proficiency in Survival skill, if you already have proficiency in it, you can double your proficiency bonus."
+								]
+							}
+						],
+						[
+							{
+								"type": "entries",
+								"name": "Fleeting Step",
+								"entries": [
+									"By 10th level, your speed and evasiveness have reached new levels. Your base walking speed is increased by 10 feet, and may take the Disengage action as a bonus action."
+								]
+							}
+						],
+						[
+							{
+								"type": "entries",
+								"name": "Snipe",
+								"entries": [
+									"By 14th level, you can hone in on your targets no matter how difficult the shot. When a creature is within the short range of your ranged weapon, you gain a +1 bonus to attack and damage rolls. You also do not have disadvantage on attack rolls when targeting a creature within the long range of a ranged weapon."
+								]
+							}
+						]
+					],
+					"source": "Homebrew",
+					"shortName": "Precision Sniper"
+				}
+			]
+		}
+	]
+}
